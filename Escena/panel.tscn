@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceq667bbgc8en"]
+
+[ext_resource type="Script" path="res://Scripts/control.gd" id="1_c1bj7"]
+
+[node name="Panel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 43.0
+offset_bottom = 41.0
+script = ExtResource("1_c1bj7")
+
+[node name="Control" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="Control"]
+offset_left = 139.0
+offset_top = 62.0
+offset_right = 272.0
+offset_bottom = 88.0
+size_flags_horizontal = 4
+text = "Cuanto es 2 + 2?"
+
+[node name="LineEdit" type="LineEdit" parent="Control"]
+offset_left = 168.0
+offset_top = 92.0
+offset_right = 235.063
+offset_bottom = 123.0

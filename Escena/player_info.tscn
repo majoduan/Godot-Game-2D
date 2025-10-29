@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo1ecdn51m1x2"]
+
+[ext_resource type="Script" path="res://Scripts/player_info.gd" id="1_2pn7v"]
+
+[node name="PlayerInfo" type="CanvasLayer"]
+script = ExtResource("1_2pn7v")
+
+[node name="FruitsPointsLabel" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 115.0
+offset_bottom = 29.0
+text = "FRUIT POINTS:"

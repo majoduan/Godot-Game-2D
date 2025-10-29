@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://xw4gyt4se872"]
+
+[ext_resource type="PackedScene" uid="uid://dq0po8sbvvh6u" path="res://Escena/win_screen.tscn" id="1_m5lbb"]
+[ext_resource type="Script" path="res://Scripts/ui_layer.gd" id="1_w48bt"]
+
+[node name="UILayer" type="CanvasLayer"]
+script = ExtResource("1_w48bt")
+
+[node name="HUD" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Label" type="Label" parent="HUD"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.593
+anchor_right = 0.5
+offset_left = -51.28
+offset_top = 1.0
+offset_right = -52.0
+offset_bottom = 27.0
+grow_horizontal = 2
+text = "Time:"
+
+[node name="WinScreen" parent="." instance=ExtResource("1_m5lbb")]
+visible = false
